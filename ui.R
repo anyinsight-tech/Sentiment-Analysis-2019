@@ -15,6 +15,6 @@ shinyUI(fluidPage(
     
     tabsetPanel(
       
-      tabPanel("Histogram", HTML("<div><h4>Emotion Type for your selected hashtag<h4></div>"), plotlyOutput("plot"), HTML("<div>The graph takes minutes to generate, please be patient...</div>"))
+      tabPanel("Histogram", HTML("<div><h4>Emotion types of your selected hashtag<h4></div>"), plotlyOutput("plot"), HTML("<div>The graph takes minutes to generate, please be patient...</div>"))
   
 ))))

@@ -21,10 +21,10 @@ shinyServer(function(input, output, session) {
     # When user input is "Game of Throne"
     if (store_value$value == "Game of Thrones") {
       # Authonitical keys
-      consumer_key <- 'fvTfGlT7yY0XTwgMfUbC8mFDA'
-      consumer_secret <- 'eg8gTB3PqKFRc608KxmgYgdct2731Ei1pnmx8PUEtZNLr91LaH'
-      access_token <- '1013470531-HXFHqTQoavKl9rvjDmuF496osNN0mCflbKdKlfq'
-      access_secret <- 'E6T55EAYK9IU9MP6BZTYtkibL35m5h8xGfXL4Vlld2Hp4'
+      consumer_key <- 'wU5aIE1E6Mu3JOSkrlWLYiHLP'
+      consumer_secret <- 'EajqHPqtlJHbu0MmdS87yfAhL7coU15duID7SDiEVJwL5rt2RR'
+      access_token <- '1013470531-rkpR2OP8uSluukdbUBKqoXPWJse9EDwhMl8ggcx'
+      access_secret <- 'JViIaEjv64MA6y3xwnWuELsarXDS0QZOKy81VYtrfUe7Q'
       setup_twitter_oauth(consumer_key,consumer_secret,access_token, access_secret)
       
       # Search and store tweets
@@ -56,10 +56,10 @@ shinyServer(function(input, output, session) {
     # When user input is "Avengers: End Game"
     else if (store_value$value == "Avengers: End Game") {
       # Authonitical keys
-      consumer_key <- 'fvTfGlT7yY0XTwgMfUbC8mFDA'
-      consumer_secret <- 'eg8gTB3PqKFRc608KxmgYgdct2731Ei1pnmx8PUEtZNLr91LaH'
-      access_token <- '1013470531-HXFHqTQoavKl9rvjDmuF496osNN0mCflbKdKlfq'
-      access_secret <- 'E6T55EAYK9IU9MP6BZTYtkibL35m5h8xGfXL4Vlld2Hp4'
+      consumer_key <- 'wU5aIE1E6Mu3JOSkrlWLYiHLP'
+      consumer_secret <- 'EajqHPqtlJHbu0MmdS87yfAhL7coU15duID7SDiEVJwL5rt2RR'
+      access_token <- '1013470531-rkpR2OP8uSluukdbUBKqoXPWJse9EDwhMl8ggcx'
+      access_secret <- 'JViIaEjv64MA6y3xwnWuELsarXDS0QZOKy81VYtrfUe7Q'
       setup_twitter_oauth(consumer_key,consumer_secret,access_token, access_secret)
       
       # Search and store tweets
@@ -91,10 +91,10 @@ shinyServer(function(input, output, session) {
     # When user input is "James Charles"
     else if (store_value$value == "James Charles") {
       # Authonitical keys
-      consumer_key <- 'fvTfGlT7yY0XTwgMfUbC8mFDA'
-      consumer_secret <- 'eg8gTB3PqKFRc608KxmgYgdct2731Ei1pnmx8PUEtZNLr91LaH'
-      access_token <- '1013470531-HXFHqTQoavKl9rvjDmuF496osNN0mCflbKdKlfq'
-      access_secret <- 'E6T55EAYK9IU9MP6BZTYtkibL35m5h8xGfXL4Vlld2Hp4'
+      consumer_key <- 'wU5aIE1E6Mu3JOSkrlWLYiHLP'
+      consumer_secret <- 'EajqHPqtlJHbu0MmdS87yfAhL7coU15duID7SDiEVJwL5rt2RR'
+      access_token <- '1013470531-rkpR2OP8uSluukdbUBKqoXPWJse9EDwhMl8ggcx'
+      access_secret <- 'JViIaEjv64MA6y3xwnWuELsarXDS0QZOKy81VYtrfUe7Q'
       setup_twitter_oauth(consumer_key,consumer_secret,access_token, access_secret)
       
       # Search and store tweets

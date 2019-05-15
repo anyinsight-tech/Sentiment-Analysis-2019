@@ -7,13 +7,14 @@ shinyUI(fluidPage(
   
   # Getting User Inputs
   sidebarPanel(
-    selectInput("hashtag" , "Choose a trending topic to analyse!", c("Game of Thrones", "Avengers: End Game", "James Charles"))
+    selectInput("hashtag" , "Choose a trending topic to analyse!", c("Game of Thrones", "Avengers: End Game", "James Charles")),
+    textOutput("text")
   ),
   
   mainPanel(
     
     tabsetPanel(
       
-      tabPanel("Histogram", HTML("<div><h3>Emotion Type for your selected hashtag<h3></div>"), HTML("<div>Data takes minutes to load, please be patient...</div>"), plotlyOutput("plot"))
+      tabPanel("Histogram", HTML("<div><h4>Emotion Type for your selected hashtag<h4></div>"), plotlyOutput("plot"), HTML("<div>The graph takes minutes to generate, please be patient...</div>"))
   
 ))))

@@ -6,6 +6,7 @@ library(httr)
 library(tm)
 library(wordcloud)
 library(syuzhet)
+library(plotly)
 
 shinyServer(function(input, output, session) {
   # Create object for reactive value
@@ -47,6 +48,9 @@ shinyServer(function(input, output, session) {
       emo_bar = colSums(emotions)
       emo_sum = data.frame(count=emo_bar, emotion=names(emo_bar))
       emo_sum$emotion = factor(emo_sum$emotion, levels=emo_sum$emotion[order(emo_sum$count, decreasing = TRUE)])
+      
+      # Print text
+      output$text <- renderText({paste("How do people feel about the final season of GOT?")})
     }
     
     # When user input is "Avengers: End Game"
@@ -79,6 +83,9 @@ shinyServer(function(input, output, session) {
       emo_bar = colSums(emotions)
       emo_sum = data.frame(count=emo_bar, emotion=names(emo_bar))
       emo_sum$emotion = factor(emo_sum$emotion, levels=emo_sum$emotion[order(emo_sum$count, decreasing = TRUE)])
+      
+      # Print text
+      output$text <- renderText({paste("How do people feel about the final Avengers movie?")})
     }
     
     # When user input is "James Charles"
@@ -111,6 +118,9 @@ shinyServer(function(input, output, session) {
       emo_bar = colSums(emotions)
       emo_sum = data.frame(count=emo_bar, emotion=names(emo_bar))
       emo_sum$emotion = factor(emo_sum$emotion, levels=emo_sum$emotion[order(emo_sum$count, decreasing = TRUE)])
+      
+      # Print text
+      output$text <- renderText({paste("How do people feel about the scandalous James Charles?")})
     }
     
     # Generate histogram

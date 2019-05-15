@@ -1,0 +1,19 @@
+library(shiny)
+library(plotly)
+shinyUI(fluidPage(
+  
+  headerPanel("Twitter Sentiment Analysis"),
+  textOutput("time"),
+  
+  # Getting User Inputs
+  sidebarPanel(
+    selectInput("hashtag" , "Choose a trending topic to analyse!", c("Game of Thrones", "Avengers: End Game", "James Charles"))
+  ),
+  
+  mainPanel(
+    
+    tabsetPanel(
+      
+      tabPanel("Histogram", HTML("<div><h3>Emotion Type for your selected hashtag<h3></div>"), HTML("<div>Data takes minutes to load, please be patient...</div>"), plotlyOutput("plot"))
+  
+))))

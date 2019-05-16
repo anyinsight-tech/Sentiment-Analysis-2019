@@ -25,7 +25,7 @@ shinyServer(function(input, output, session) {
     setup_twitter_oauth(consumer_key,consumer_secret,access_token, access_secret)
     
     # Search and store tweets
-    tweets = searchTwitter(store_value$value, n = 200, lang = "en")
+    tweets = searchTwitter(store_value$value, n = 300, lang = "en")
     tweets.df = twListToDF(tweets)
     
     # Clean tweets

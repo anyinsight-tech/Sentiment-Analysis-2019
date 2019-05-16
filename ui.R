@@ -7,7 +7,8 @@ shinyUI(fluidPage(
   
   # Getting User Inputs
   sidebarPanel(
-    selectInput("hashtag" , "Choose a trending topic to analyse!", c("Brexit" = "#brexit", "Samsung fold" = "#samsungfold", "Credit Suisse" = "#creditsuisse")),
+    textInput("hashtag", "Enter topic to be searched with '#'", "#"),
+    submitButton(text="Analyse"),
     textOutput("text")
   ),
   

@@ -1,3 +1,12 @@
+# Before beginning, you have to: 
+# install.packages("twitteR", repos = "http://cran.us.r-project.org")
+# install.packages("RCurl", repos = "http://cran.us.r-project.org")
+# install.packages("httr", repos = "http://cran.us.r-project.org")
+# install.packages("syuzhet", repos = "http://cran.us.r-project.org")
+# install.packages("plotly")
+
+
+
 # Load the required Packages
 library(shiny)
 library(twitteR)
@@ -54,5 +63,6 @@ shinyServer(function(input, output, session) {
     output$time <- renderText({invalidateLater(1000, session) 
       paste("Results are generated at: ",Sys.time())})
     
+    # Now, for the word plot: 
   })
 })

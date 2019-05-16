@@ -15,7 +15,6 @@ shinyUI(fluidPage(
   mainPanel(
     
     tabsetPanel(
-      
-      tabPanel("Histogram", HTML("<div><h3>Emotion Type for your selected hashtag<h3></div>"), HTML("<div>Data takes minutes to load, please be patient...</div>"), plotlyOutput("plot"))
-      
+      tabPanel("Histogram", HTML("<div><h3>Emotion Type for your selected hashtag<h3></div>"), plotlyOutput("plot")),
+      tabPanel("Word Cloud",HTML("<div><h3>Words associated with the hashtag</h3></div>"),plotOutput("wordcloud"))
 ))))

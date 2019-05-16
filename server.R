@@ -59,6 +59,13 @@ shinyServer(function(input, output, session) {
     output$plot <- renderPlotly({plot_ly(emo_sum, x=~emotion, y=~count, type="bar", color=~emotion)})
     output$text <- renderText({paste("How do people feel about", input$hashtag, "?")})
     
+    # Create word cloud
+    tweet_text_corpus <- Corpus(VectorSource(tweets.df$text))
+    tweet_text_corpus <- tm_map(tweet_text_corpus, function(x)removeWords(x,stopwords()))
+    tweet_text_corpus <- tm_map(tweet_text_corpus, removeWords, c("RT", "are", "that"))
+    set.seed(1234)
+    output$wordcloud <- renderPlot({wordcloud(tweet_text_corpus,random.order=F,max.words=80, col=rainbow(100), main="WordCloud", scale=c(4.5, 1))})
+    
     # Indicate current time
     output$time <- renderText({invalidateLater(1000, session) 
       paste("Results are generated at: ",Sys.time())})

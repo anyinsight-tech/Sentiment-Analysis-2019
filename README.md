@@ -1,10 +1,10 @@
 # Sentimenta
-## Twitter Sentiment Analysis Shiny Web Application
 
 ## FOR THE VIDEO MADE BY THE GROUP TALKING ABOUT THE APP, PLEASE CHECK THE FOLLOWING LINK: 
 https://drive.google.com/file/d/1TeVyl6CSoyZhzIX1xqePeuVltCN-s094/view?usp=sharing
 (We didn't upload it directly to Github because it is too big and exceedes Github's limit of 25 mb.) 
 
+## Twitter Sentiment Analysis Shiny Web Application
 Sentiment Analysis, also known as Opinion Mining, is a field within Natural Language Processing (NLP) that builds systems that try to identify and extract opinions within text. 
 
 By using a “Rule based approach” and creating “polarized lexicons”, our project can analyze tweets to extract subjective data from the public. In our project, we use the NRC dictionary lexicons to screen the emotions. (reference: https://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm)

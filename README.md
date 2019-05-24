@@ -1,7 +1,7 @@
 # Sentimenta
 
 ## FOR THE VIDEO MADE BY THE GROUP TALKING ABOUT THE APP, PLEASE CHECK THE FOLLOWING LINK: 
-https://drive.google.com/file/d/1TeVyl6CSoyZhzIX1xqePeuVltCN-s094/view?usp=sharing
+https://www.youtube.com/watch?v=AVS6cSKZ6l4&feature=youtu.be
 
 ## Twitter Sentiment Analysis Shiny Web Application
 Sentiment Analysis, also known as Opinion Mining, is a field within Natural Language Processing (NLP) that builds systems that try to identify and extract opinions within text. 
